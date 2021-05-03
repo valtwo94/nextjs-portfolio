@@ -1,18 +1,33 @@
-import Link from "next/link";
-import {getFeaturedEvents} from "../dummy";
-import EventItem from "../components/events/event-item";
+
+
 import EventList from "../components/events/event-list";
+import {getFeaturedEvents} from "../helpers/api-util";
 
 
-const HomePage = () => {
-    const featuredEvents = getFeaturedEvents()
+const HomePage = (props) => {
 
+    if(!props.events){
+        return (
+            <p>Loading</p>
+        )
+    }
 
     return (
         <div>
-            <EventList items={featuredEvents}/>
+            <EventList items={props.events}/>
         </div>
     )
+}
+
+export async function getStaticProps(){
+    const featuredEvents = await getFeaturedEvents()
+    console.log(featuredEvents)
+
+    return {
+        props: {
+            events: featuredEvents
+        }
+    }
 }
 
 
