@@ -1,6 +1,5 @@
 import "./globals.css";
 import StyledComponentsRegistry from "@/app/registry";
-import Layout from "@/layout/Layout";
 
 export const metadata = {
     title: "렌트카 서비스",
