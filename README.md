@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 렌터카 홈페이지 프로젝트
 
-## Getting Started
+### 프로젝트 설명
 
-First, run the development server:
+이 프로젝트는 렌터카 회사를 위한 홈페이지를 개발하는 것입니다. 홈페이지는 렌터카 서비스와 이벤트 정보를 제공하며, 사용자들이 간편하게 렌터카를 예약하고 관리할 수 있는 기능을 포함합니다. 기술 스택으로는 Next.js와 styled-components를 사용하여 빠르고 유연한 개발을 목표로 합니다.
+
+
+### TODO
+
+#### 홈페이지 레이아웃 및 기본 기능
+
+1. [ ] **헤더와 푸터 구현**
+    - [x] 로고 컴포넌트 제작
+    - [x] Header 컴포넌트 구현
+    - [x] Footer 컴포넌트 구현
+    - [ ] 헤더에 메뉴 및 링크 추가
+    - [ ] 푸터에 연락처 및 소셜 미디어 링크 추가
+
+2. [ ] **홈페이지 메인 페이지 구현**
+    - [ ] 렌더링되는 메인 섹션 추가
+    - [ ] 렌터카 서비스 소개
+    - [ ] 최신 이벤트 정보 표시
+    - [ ] 예약 버튼 추가
+
+3. [ ] **렌터카 및 이벤트 페이지 구현**
+    - [ ] `/rent` 및 `/event` 페이지 생성
+    - [ ] 해당 페이지에 필요한 정보 및 기능 구현
+    - [ ] 페이지 간 이동을 위한 링크 추가
+
+#### 사용자 관리 기능
+
+4. [ ] **마이페이지 구현**
+    - [ ] `/mypage` 페이지 생성
+    - [ ] 로그인, 로그아웃, 회원가입 기능 구현
+    - [ ] 예약 내역 및 프로필 관리 추가
+
+#### 기술적 측면
+
+5. [ ] **스타일링**
+    - [ ] 전체적인 스타일 작업
+    - [ ] 반응형 디자인 적용
+
+6. [ ] **API 통합**
+    - [ ] 서버 API 연동을 위한 `api.js` 작성
+    - [ ] 필요한 데이터를 서버에서 가져오는 기능 구현
+
+7. [ ] **테스트**
+    - [ ] 유닛 테스트 및 통합 테스트 작성
+    - [ ] 테스트 코드 실행 및 검증
+
+8. [ ] **배포**
+    - [ ] 프로덕션 환경에 앱을 배포
+
+### 프로젝트 실행 방법
+
+1. 프로젝트를 클론합니다.
+
+```bash
+git clone https://github.com/yourusername/rental-car-website.git
+```
+
+2. 프로젝트 디렉토리로 이동합니다.
+
+```bash
+cd rental-car-website
+```
+
+3. 의존성을 설치합니다.
+
+```bash
+npm install
+```
+
+4. 개발 서버를 실행합니다.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+프로젝트는 `http://localhost:3000`에서 실행됩니다.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
